@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Crimson+Pro:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Crimson Pro', serif;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(120deg, #B7FDFD, #017070);
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba (0,0,0,0.5);
+    transform: translate (-50%,-50%);
+}
+
+.content h1 {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px solid silver;
+    
+}
+
+.content form {
+    padding: 0 40px;
+    box-sizing: border-box;
+    
+}
+
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid silver;
+    margin: 30px 0;
+}
+
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #186ED0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.txt_field label:hover{
+    transform: translateY(-200%);
+}
+
+a{
+    display: inline-block;
+    font-size: 1em;
+    background: blue;
+    padding: 10px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+a:hover{
+    
+}
