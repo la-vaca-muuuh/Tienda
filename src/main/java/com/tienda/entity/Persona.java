@@ -1,6 +1,5 @@
 package com.tienda.entity;
 
-
 import java.io.Serializable;
 import javax.persistence.JoinColumn;
 import javax.persistence.Entity;
@@ -11,29 +10,31 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table (name="personas")
+@Table(name = "personas")
 
-public class Persona implements Serializable{
+public class Persona implements Serializable {
+
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
-    
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private long id;
-    private String apelido1;
+    private String nombre;
+    private String apellido1;
     private String apellido2;
     private String telefono;
     private String email;
-    
+
     @ManyToOne
-    @JoinColumn(name="paises_id")
-    
+    @JoinColumn(name = "paises_id")
+
     private Pais pais;
 
     public long getId() {
         return id;
     }
 
-    public String getApelido1() {
-        return apelido1;
+    public String getApellido1() {
+        return apellido1;
     }
 
     public String getApellido2() {
@@ -56,8 +57,8 @@ public class Persona implements Serializable{
         this.id = id;
     }
 
-    public void setApelido1(String apelido1) {
-        this.apelido1 = apelido1;
+    public void setApellido1(String apelido1) {
+        this.apellido1 = apelido1;
     }
 
     public void setApellido2(String apellido2) {
@@ -76,7 +77,12 @@ public class Persona implements Serializable{
         this.pais = pais;
     }
 
-    
-    
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
 }
